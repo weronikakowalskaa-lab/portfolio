@@ -1,24 +1,24 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router-dom";
 import { HomePage } from "./components/HomePage";
 import { CaseStudyPage } from "./components/CaseStudyPage";
 import { PetCareCaseStudy } from "./components/PetCareCaseStudy";
 import { LittleLemonCaseStudy } from "./components/LittleLemonCaseStudy";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
-    Component: HomePage,
+    element: <HomePage />,
   },
   {
     path: "/projects/petcare-app",
-    Component: PetCareCaseStudy,
+    element: <PetCareCaseStudy />,
   },
   {
     path: "/projects/little-lemon",
-    Component: LittleLemonCaseStudy,
+    element: <LittleLemonCaseStudy />,
   },
   {
     path: "/projects/:slug",
-    Component: CaseStudyPage,
+    element: <CaseStudyPage />,
   },
 ]);
