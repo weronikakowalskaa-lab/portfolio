@@ -27,14 +27,14 @@ export function HomePage() {
   }, [location.state]);
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC]">
-      <Navigation />
-      <HeroSection />
-      <ProjectsSection />
-      <AboutSection />
-      <SkillsSection />
-      <CertificatesSection />
-      <ContactSection />
-    </div>
+  <div className="min-h-screen bg-[#F8FAFC] flex flex-col">
+    <Navigation />
+    <HeroSection />
+    <ProjectsSection />
+    <AboutSection />
+    <SkillsSection />
+    <CertificatesSection />
+    <ContactSection />
+  </div>
   );
 }
